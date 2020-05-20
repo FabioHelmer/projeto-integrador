@@ -47,7 +47,6 @@ class ListaLinear:
                 msg += item.escola.nome
                 msg += "[{}".format(item.distanciaAdjacencia)
                 msg += "]"
-            msg += ")"
-            print(msg)
-            msg = ""
+            msg += ")\n"
             atual = atual.getProx()
+        return msg
