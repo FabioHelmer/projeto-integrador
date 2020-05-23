@@ -1,4 +1,12 @@
+# DESENVOLVIDO POR:
+# CARLOS BARAQUIEL STEIN DE MEDEIROS
+# FABIO HELMER KUHN
+# GABRIEL FELIX MENEZES DA SILVA
+# JOÃO BATISTA MUYLAERT DE ARAUJO JUNIOR
+# WESLEY MARQUES PIZETA
 from No import No
+
+# Lista Linear Simplesmente Encadeada
 
 
 class ListaLinear:
@@ -28,6 +36,7 @@ class ListaLinear:
     def isVazia(self):
         return self.quantNos == 0
 
+# adicionando uma escola na lista
     def add(self, escola):
         no = No(escola)
         if ListaLinear.isVazia(self):
@@ -37,6 +46,7 @@ class ListaLinear:
         self.ult = no
         self.quantNos += 1
 
+# imprimindo o conteudo da lista
     def imprimir(self):
         msg = ""
         atual = self.prim
