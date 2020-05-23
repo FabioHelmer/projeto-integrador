@@ -4,4 +4,4 @@
 
 # python ini.py
 
-### o file.csv e o arquivo onde contem as escolas e as distancias entre elas
+### o file e o arquivo onde contem as escolas e as distancias entre elas
