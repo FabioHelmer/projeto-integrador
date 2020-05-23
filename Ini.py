@@ -1,5 +1,6 @@
 from ListaLinear import ListaLinear
 import Mapa as map
+import Dijkstra
 
 lista = ListaLinear()
 lista.add(map.escolaA)
@@ -12,3 +13,4 @@ lista.add(map.escolaG)
 lista.add(map.escolaH)
 
 print(lista.imprimir())
+Dijkstra.dijkstra_path(lista, map.escolaA, map.escolaH)

@@ -11,8 +11,8 @@ from No import No
 
 class ListaLinear:
     def __init__(self):
-        self.prim = No
-        self.ult = No
+        self.prim = None
+        self.ult = None
         self.quantNos = 0
 
     def getPrim(self):
@@ -46,7 +46,14 @@ class ListaLinear:
         self.ult = no
         self.quantNos += 1
 
-# imprimindo o conteudo da lista
+    def pesNo(self, nome):
+        atual = self.prim
+        while atual != None:
+            if atual.getInfo().nome == nome:
+                return atual
+            atual = atual.getProx()
+
+    # imprimindo o conteudo da lista
     def imprimir(self):
         msg = ""
         atual = self.prim

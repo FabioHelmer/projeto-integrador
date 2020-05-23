@@ -12,7 +12,7 @@ class Adjacente:
         self.distanciaAdjacencia = distancia
 
     def setDistanciaAdjacencia(self, distancia):
-        self.distanciaAdjacencia = distancia
+        self.distanciaAdjacencia = float(distancia)
 
     def getDistanciaAdjacencia(self):
         return self.distanciaAdjacencia
