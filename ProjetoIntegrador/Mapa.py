@@ -44,6 +44,7 @@ escolaF = Escola(escolas[5])
 escolaG = Escola(escolas[6])
 escolaH = Escola(escolas[7])
 
+# limpo o que veio do arquivo e passo armazenar as escolas criadas
 escolas.clear()
 
 # criando as adjacencias entre as escolas
@@ -70,7 +71,6 @@ escolaF.addAdjacentes(Adjacente(escolaE, distancia[9]))
 escolas.append(escolaF)
 
 # se A e ligado em B, logo B e liado em A, é isso que esse algotrimo faz
-
 for escola in escolas:
     for item in escola.getAdjacentes():
         temp = []
@@ -80,4 +80,3 @@ for escola in escolas:
         if escola.nome not in temp:
             item.escola.addAdjacente(
                 Adjacente(escola, item.distanciaAdjacencia))
-

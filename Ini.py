@@ -2,15 +2,14 @@ from ListaLinear import ListaLinear
 import Mapa as map
 import Dijkstra
 
-lista = ListaLinear()
-lista.add(map.escolaA)
-lista.add(map.escolaB)
-lista.add(map.escolaC)
-lista.add(map.escolaD)
-lista.add(map.escolaE)
-lista.add(map.escolaF)
-lista.add(map.escolaG)
-lista.add(map.escolaH)
+listaEscolas = ListaLinear()
+listaEscolas.add(map.escolaA)
+listaEscolas.add(map.escolaB)
+listaEscolas.add(map.escolaC)
+listaEscolas.add(map.escolaD)
+listaEscolas.add(map.escolaE)
+listaEscolas.add(map.escolaF)
+listaEscolas.add(map.escolaG)
+listaEscolas.add(map.escolaH)
 
-print(lista.imprimir())
-Dijkstra.dijkstra_path(lista, map.escolaA, map.escolaH)
+Dijkstra.dijkstra_path(listaEscolas, map.escolaA, map.escolaC)

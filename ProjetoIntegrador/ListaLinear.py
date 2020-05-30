@@ -6,8 +6,6 @@
 # WESLEY MARQUES PIZETA
 from No import No
 
-# Lista Linear Simplesmente Encadeada
-
 
 class ListaLinear:
     def __init__(self):
