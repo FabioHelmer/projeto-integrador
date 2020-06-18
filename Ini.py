@@ -12,4 +12,5 @@ listaEscolas.add(map.escolaF)
 listaEscolas.add(map.escolaG)
 listaEscolas.add(map.escolaH)
 
-Dijkstra.dijkstra_path(listaEscolas, map.escolaA, map.escolaC)
+#Dijkstra.dijkstra_path(listaEscolas, map.escolaA, map.escolaH)
+print(listaEscolas.getAdjascenteCidade(map.escolaA, map.escolaC).nome)

@@ -9,7 +9,6 @@
 class Escola:
     def __init__(self, nome, ):
         self.nome = nome
-        self.visitado = False
         self.adjacentes = []
 
     def addAdjacente(self, escola):

@@ -62,7 +62,15 @@ class ListaLinear:
             msg += "{}]\n".format(escola.adjacentes[i].distanciaAdjacencia)
         return msg
 
+     # visualizar os adjacentes de uma escola
+    def getAdjascenteCidade(self, escola, adjacente):
+        for i in range(len(escola.getAdjacentes())):
+            if escola.getAdjacentes()[i].escola == adjacente:
+                return escola.getAdjacentes()[i].escola
+        return None
+
     # imprimindo o conteudo da lista
+
     def imprimir(self):
         msg = ""
         atual = self.prim
