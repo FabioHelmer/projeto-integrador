@@ -19,4 +19,27 @@ listaEscolas.add(mapa.escolaF)
 listaEscolas.add(mapa.escolaG)
 listaEscolas.add(mapa.escolaH)
 
-Dijkstra.dijkstra_path(listaEscolas, mapa.escolaA, mapa.escolaH)
+
+data = {
+    1: mapa.escolaB,
+    2: mapa.escolaC,
+    3: mapa.escolaD,
+    4: mapa.escolaE,
+    5: mapa.escolaF,
+    6: mapa.escolaG,
+    7: mapa.escolaH, }
+
+print()
+print("1 - Escola Belarmino")
+print("2 - Escola Cacilda")
+print("3 - Escola Divino")
+print("4 - Escola Eufrates")
+print("5 - Escola Farrapos")
+print("6 - Escola Guilhermino")
+print("7 - Escola Hermenegildo")
+destino = int(input("Esolha o numero de Destino: "))
+print()
+if destino in data:
+    Dijkstra.dijkstra_path(listaEscolas, mapa.escolaA, data[destino])
+else:
+    print("Lamento, opção invalida")
