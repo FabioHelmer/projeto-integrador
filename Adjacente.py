@@ -8,6 +8,8 @@
 
 class Adjacente:
     def __init__(self, escola, distancia):
+        # objeto criado para guardar a escola que é adjascente
+        # e guardar a distancia
         self.escola = escola
         self.distanciaAdjacencia = distancia
 

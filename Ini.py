@@ -1,16 +1,45 @@
+# DESENVOLVIDO POR:
+# CARLOS BARAQUIEL STEIN DE MEDEIROS
+# FABIO HELMER KUHN
+# GABRIEL FELIX MENEZES DA SILVA
+# JOÃO BATISTA MUYLAERT DE ARAUJO JUNIOR
+# WESLEY MARQUES PIZETA
+
 from ListaLinear import ListaLinear
-import Mapa as map
+import Mapa as mapa
 import Dijkstra
 
 listaEscolas = ListaLinear()
-listaEscolas.add(map.escolaA)
-listaEscolas.add(map.escolaB)
-listaEscolas.add(map.escolaC)
-listaEscolas.add(map.escolaD)
-listaEscolas.add(map.escolaE)
-listaEscolas.add(map.escolaF)
-listaEscolas.add(map.escolaG)
-listaEscolas.add(map.escolaH)
+listaEscolas.add(mapa.escolaA)
+listaEscolas.add(mapa.escolaB)
+listaEscolas.add(mapa.escolaC)
+listaEscolas.add(mapa.escolaD)
+listaEscolas.add(mapa.escolaE)
+listaEscolas.add(mapa.escolaF)
+listaEscolas.add(mapa.escolaG)
+listaEscolas.add(mapa.escolaH)
 
-#Dijkstra.dijkstra_path(listaEscolas, map.escolaA, map.escolaH)
-print(listaEscolas.getAdjascenteCidade(map.escolaA, map.escolaC).nome)
+
+data = {
+    1: mapa.escolaB,
+    2: mapa.escolaC,
+    3: mapa.escolaD,
+    4: mapa.escolaE,
+    5: mapa.escolaF,
+    6: mapa.escolaG,
+    7: mapa.escolaH, }
+
+print()
+print("1 - Escola Belarmino")
+print("2 - Escola Cacilda")
+print("3 - Escola Divino")
+print("4 - Escola Eufrates")
+print("5 - Escola Farrapos")
+print("6 - Escola Guilhermino")
+print("7 - Escola Hermenegildo")
+destino = input("Esolha o numero de Destino: ")
+print()
+if destino in data:
+    Dijkstra.dijkstra_path(listaEscolas, mapa.escolaA, data[int(destino)])
+else:
+    print("Lamento, opção invalida")

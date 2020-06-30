@@ -8,6 +8,7 @@
 
 class No:
     def __init__(self, escola):
+        # escola é o item
         self.info = escola
         self.prox = None
 

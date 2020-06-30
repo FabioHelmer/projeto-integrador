@@ -9,7 +9,7 @@
 class Escola:
     def __init__(self, nome, ):
         self.nome = nome
-        self.adjacentes = []
+        self.adjacentes = []  # recebe o objeto Adjacente
 
     def addAdjacente(self, escola):
         self.adjacentes.append(escola)
